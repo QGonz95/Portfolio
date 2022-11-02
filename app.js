@@ -21,7 +21,6 @@ const closeModal2 = () => {
 }
 
 
-
 $openBtn.on('click', openModal)
 $closeBtn.on('click', closeModal)
 $openBtn2.on('click', openModal2)

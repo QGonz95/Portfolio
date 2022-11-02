@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css"/>
+    <title>Portfolio</title>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
             integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="app.js"></script>
 </head>
-    <title>Q. Gonz</title>
 <body>
     <p id="name">Quentin Gonzalez</p>
     <div id="state">
-    <h4>Junior Software Engineer with a background in Personal Training and Competitive boxing.
+        <h4>Junior Software Engineer with a background in Personal Training and Competitive boxing.
         My background allows me to bring a detailed-oriented approach to any task. 
         It also taught me how to be growth oriented which brought me to understanding and loving the journey just as much as the finished product.</h4>
     </div>
-    <div>
-        <ul id="li">
-        <li class="nav"><a href="#">Bio</a></li>
-        <li class="nav"><a href="#">Resume</a></li>
-        <li class="nav"><a href="#">Projects</a></li>
-        <li class="nav"><a href="https://www.linkedin.com/in/quentin-gonzalez-/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </div>
-
-
-
+    <nav class="navbar">
+        <div class="n-container">
+            <a href ="/" id="logo">QG</a>
+        <div class="bar" id="menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>    
+            <ul id="li">
+                <li class="nav-links"><a href="Resume.html" target="_blank">Resume</a></li>
+                <li class="nav-links"><a href="Bio.html" target="_blank">Bio</a></li>
+                <li class="nav-links"><a href="Projects.html" target="_blank">Projects</a></li>
+                <li class="nav-links"><a href="https://www.linkedin.com/in/quentin-gonzalez-/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </nav>
 </body>
-<footer id="foot"> 
-    <button class="foot">CONTACT</button>
-    <button class="foot">FEEDBACK</button>
-</footer>
-</html>
+</html> 
+
+

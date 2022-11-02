@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:fantasy;
+}
+
+.nav {
+    display: flex; 
+    background: lightgray;
+    justify-content: center;
+    position: sticky;  /* sticky switches between relative and fixed. depends on the position of the scroll */
+    height: 90px;
+    top: 0;
+    z-index: 999; /* z index defines order of overlapping html elements - highest index will be placed on top*/
+}
+.n-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: auto;
+    z-index: 1;
+    max-width: 1300px;
+}
+#li {
+    display: flex;
+    align-items:flex-end;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+}

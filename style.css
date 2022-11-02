@@ -1,44 +1,81 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:fantasy;
-}
 
-.nav {
-    display: flex; 
-    background: lightgray;
-    justify-content: center;
-    position: sticky;  /* sticky switches between relative and fixed. depends on the position of the scroll */
-    height: 90px;
-    top: 0;
-    z-index: 999; /* z index defines order of overlapping html elements - highest index will be placed on top*/
+/* contact modal */
+#openModal:hover{
+    background-color: #A9D9D0;
+    transition: .4s;
 }
-.n-container {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100px;
-    width: 100%;
-    margin: 0 auto;
-    padding: auto;
+#modal {
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    height: 100%;
+    width:100%;
     z-index: 1;
-    max-width: 1300px;
+    overflow: auto;
 }
-#li {
-    display: flex;
-    align-items:flex-end;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    text-decoration: none;
-    list-style: none;
+#modal-textbox {
+    background: white;
+    height: 350px;
+    width: 550px;
+    border-radius: 2px;
+    margin: 150px auto;
+    padding: 2%;
+    line-height:120%;
+    box-shadow: 0 2px 2px #F2E7DC;
 }
+#foot {
+display: flex;
+justify-content: end;
+flex-direction: column;
+}
+#close{
+   display: flex;
+   justify-content: end;
 
-.nav-links {
-    display: flex;
-    align-items: flex-end;
+}
+#close:hover {
+    background-color: black;
+    transition: .7s;
+    color: white;
+}
+/* Feedback Modal */
+#openModal2:hover{
+    background-color: #A9D9D0;
+    transition: .4s;
+}
+#modal2 {
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right:0;
     height: 100%;
-    width: 100%;
-    justify-content: center;
-    text-decoration: none;
+    width:100%;
+    z-index: 1;
+    overflow: auto;
+}
+#modal-textbox2 {
+    background: white;
+    height: 350px;
+    width: 500px;
+    border-radius: 2px;
+    margin: 150px auto;
+    padding: 2%;
+    line-height:120%;
+    box-shadow: 0 2px 2px #F2E7DC;
+}
+#foot2 {
+display: flex;
+justify-content: end;
+flex-direction: column;
+}
+#close2 {
+    display: flex;
+    justify-content: end;
+}
+#close2:hover {
+    transition: .7s;
+    color: white;
 }

@@ -29,7 +29,7 @@ header {
 /* My name in the left corner */
 .logo {
     cursor: pointer;
-    margin-right:auto;
+    margin-right: auto;
 }
 .logo:hover {
     color: #FA8113;
@@ -48,4 +48,59 @@ header {
     color: #8C8C8C;
     text-decoration: underline overline;
     transition: all .8s ease 0s;
+}
+
+/* IMAGE CAROUSEL */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items:flex;
+    margin-top: 10%;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+}
+.img_container{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.imgs {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px #8C8C8C;
+}
+.imgs img {
+    width: 100%;
+    border-radius: 10px;
+    display: none;
+}
+.btn {
+    display: flex;
+    margin-left: 30%;
+}
+.-btn {
+	align-self: center;
+	color: #888;
+	padding: 10px;
+	border-radius: 50%;
+	text-align: center;
+}
+.-btn :hover {
+    cursor: pointer;
+	color: white;
+}
+
+.imgs img:first-of-type {
+    display: block;
+}
+.statement {
+    display: flex;
+    flex-direction:column;
+    color: white;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }

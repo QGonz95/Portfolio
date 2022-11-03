@@ -1,6 +1,6 @@
 body {
-    height: 150vh; 
-    background: linear-gradient(to bottom,white, #0D0D0D, white);
+    height: 100%;
+    background: #8C8C8C;
 }
 #li {
     display: flex;
@@ -25,8 +25,8 @@ body {
 /* contact modal */
 #foot {
     display: flex;
-    bottom: 0;
-    right: 0;
+    /* bottom: 0;
+    right: 0; */
     justify-content: space-around;
     width: 100%;
     /* background-color: linear-gradient(to bottom, black, #027373, black); */

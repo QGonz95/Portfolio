@@ -1,0 +1,51 @@
+/* Google font link 'roboto mono' */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #0D0D0D;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a, h4 {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+/* My name in the left corner */
+.logo {
+    cursor: pointer;
+    margin-right:auto;
+}
+.logo:hover {
+    color: #FA8113;
+    transition: all .8s ease 0s;
+}
+/* keeping the nav list on the right */
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li :hover {
+    color: #8C8C8C;
+    text-decoration: underline overline;
+    transition: all .8s ease 0s;
+}

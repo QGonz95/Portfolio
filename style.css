@@ -1,6 +1,26 @@
 body {
     height: 150vh; 
-    background: linear-gradient(to bottom,white, #027373, white);
+    background: linear-gradient(to bottom,white, #0D0D0D, white);
+}
+#li {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links:hover {
+    cursor: pointer;
+    color: #F2F2F2;
+    text-decoration: underline overline;
+    transition: .8s;
 }
 /* contact modal */
 #foot {
@@ -13,10 +33,12 @@ body {
 }
 
 #openModal:hover{
-    text-decoration:overline;
-    color: #027373;
-    transition: .4s;
+    text-decoration:underline overline;
+    color: #F2F2F2;
+    transition: .8s;
+    cursor: pointer;
 }
+
 #modal {
     background-color: rgba(0,0,0,0.5);
     display: none;
@@ -28,27 +50,30 @@ body {
     z-index: 1;
     overflow: auto;
 }
+
 #modal-textbox {
-    background: #c3faec;
+    background: #BFBFBF;
     height: 350px;
     width: 550px;
     border-radius: 2px;
     margin: 150px auto;
     padding: 2%;
     line-height:120%;
-    box-shadow: 0 2px 2px #F2E7DC;
 }
+
 #close{
    display: flex;
    justify-content: end;
+}
 
-}
 #close:hover {
-    background-color: #027373;
     background: fixed;
-    transition: .7s;
-    color: white;
+    transition: .8s;
+    color: #F2F2F2;
+    cursor: pointer;
+    text-decoration: underline overline;
 }
+
 .con {
     display: flex;
     flex-direction: column;
@@ -57,17 +82,21 @@ body {
     width: fit-content;
     height: 30px;
     margin: 0;
-    padding: ;
+    padding: 0;
 }
+
 .con:hover{
-    color: #027373; 
+    color: #027373;
+    cursor: pointer; 
 }
 /* Feedback Modal */
 #openModal2:hover{
-    text-decoration:overline;
-    color: #027373;
-    transition: .4s;
+    text-decoration: underline overline;
+    color: #F2F2F2;
+    transition: .8s;
+    cursor: pointer;
 }
+
 #modal2 {
     background-color: rgba(0,0,0,0.5);
     display: none;
@@ -79,8 +108,9 @@ body {
     z-index: 1;
     overflow: auto;
 }
+
 #modal-textbox2 {
-    background: #c3faec;
+    background: #BFBFBF;
     height: 350px;
     width: 500px;
     border-radius: 2px;
@@ -98,9 +128,12 @@ flex-direction: row;
     display: flex;
     justify-content: end;
 }
+
 #close2:hover {
     transition: .7s;
-    color: #027373;
+    color: #F2F2F2;
+    cursor: pointer;
+    text-decoration: underline overline;
 }
 /*  */
 #input1 {
@@ -119,4 +152,8 @@ flex-direction: row;
     height: 100px;
     margin: 0;
     padding: 0;
+}
+
+.sub {
+    cursor: pointer;
 }

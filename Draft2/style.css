@@ -68,7 +68,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items:flex;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -139,32 +139,42 @@ header {
 /* ABOUT ME PAGE */
 #About {
     height: 85vh;
+    background-color: #BFAC95;
 }
 .Me {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
-.Me p {
-    color: white;
-    font-size: 3rem;
+
+.i {
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    font-size: 2.5rem;
 }
-.Me p:hover {
+.i:hover {
     color:#F2F2F2;
     cursor: pointer;
     text-decoration: underline;
+    transition: all 3s ease;
 }
 .myself {
-    color: #F2F2F2;
+    color: black;
     display: flex;
-    justify-content: center;
+    justify-content:center ;
+    margin-top: 5%;
 }
-.myself p {
-    margin: auto;
-    margin-left: 5%;
-    margin-right: 10%;
+.box, .img1 {
+    width: 320px;
+    transition: all .8s ease;
+    margin: 2.5%
+}
+.box {
+    font-size: 1.1rem;
 }
 
 
@@ -172,16 +182,20 @@ header {
 /* FOOTER STYLING */
 #foot {
     display: flex;
-    /* bottom: 0;
-    right: 0; */
     justify-content: space-around;
     width: 100%;
-    /* background-color: linear-gradient(to bottom, black, #027373, black); */
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    /* margin-bottom: .5%; */
+    padding: 1%
 }
-
+/* #opendModal {
+    position: relative;
+} */
 #openModal:hover{
     text-decoration:underline overline;
-    color: #F2F2F2;
+    color: white;
     transition: .8s;
     cursor: pointer;
 }
@@ -312,6 +326,15 @@ flex-direction: row;
         margin: 0 auto;
         /* transition: all .8s ease; */
     }
+    .myself {
+        color: black;
+        display: flex;
+        justify-content: center ;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 @media screen and (max-width: 550px){
     .nav_links {
@@ -319,5 +342,14 @@ flex-direction: row;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+    }
+    #foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        bottom: 0;
     }
 }

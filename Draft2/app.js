@@ -26,4 +26,6 @@ $(() => {
           
           $('.imgs').children().eq(currentImgIndex).css('display', 'block')       
       })
+
+      $('')
   })

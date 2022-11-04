@@ -12,54 +12,87 @@ html {
     scroll-behavior: smooth;
 }
 
-a, h4 {
+a, .logo {
     font-family: 'Roboto Mono', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #F2F2F2;
     text-decoration: none;
+    position: relative;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    /* background-color: #9CA2A6; */
+    height: fit-content;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
 }
 /* My name in the left corner */
 .logo {
     cursor: pointer;
-    margin-right: auto;
+    position: relative;
 }
 .logo:hover {
-    color: #FA8113;
+    color: #D93D04;
     transition: all .8s ease 0s;
 }
 /* keeping the nav list on the right */
 .nav_links {
     list-style: none;
+    /* background-color: #9CA2A6; */
+    position: relative;
 }
 .nav_links li {
     display: inline-block;
     padding: 0px 20px;
     transition: all 0.3s ease 0s;
+    /* background-color: #9CA2A6; */
+    position: relative;
 }
 .nav_links li :hover {
-    color: #8C8C8C;
+    color: #F25C05;
     text-decoration: underline overline;
-    transition: all .8s ease 0s;
+    transition: all .8s ease;
 }
-
+/* HOME PAGE */
+#main {
+    height: 100vh;
+}
 /* IMAGE CAROUSEL */
 .container {
     display: flex;
     flex-direction: row;
     align-items:flex;
-    margin-top: 1%;
+    margin-top: 2%;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+.statement {
+    display: flex;
+    flex-direction:column;
+    color: white;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 8%;
+}
+.statement h1:hover {
+    cursor: pointer;
+    color: #F2F2F2;
+    text-decoration: underline;
+}
+.statement p {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
 .img_container{
     width: 100%;
     display: flex;
@@ -68,7 +101,7 @@ header {
 
 .imgs {
     width: 100%;
-    padding: 10px;
+    padding: 1px;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 1px 1px #8C8C8C;
@@ -83,28 +116,76 @@ header {
 .btn {
     display: flex;
     justify-content: center;
+    background: none;
 }
 .-btn {
 	align-self: center;
-	color: #888;
+	color: white;
 	padding: 10px;
 	border-radius: 50%;
 	text-align: center;
+    margin-top: 1%;
+    font-size: 1.5rem;
 }
 .-btn :hover {
     cursor: pointer;
-	color: white;
+	color: #D93D04;
 }
 
 .imgs img:first-of-type {
     display: block;
 }
-.statement {
+
+/* ABOUT ME PAGE */
+#About {
+    height: 85vh;
+}
+.Me {
     display: flex;
-    flex-direction:column;
-    color: white;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: 10%;
+}
+.Me p {
+    color: white;
+    font-size: 3rem;
+}
+.Me p:hover {
+    color:#F2F2F2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.myself {
+    color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+.myself p {
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+
+
+
+
+/* FOR SMALLER SCREENS DEPENDING ON MAX WIDTH */
+@media screen and (max-width: 800px) {
+    .header, h4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        /* transition: all .8s ease; */
+    }
+}
+@media screen and (max-width: 550px){
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }

@@ -82,8 +82,15 @@ $(() => {
     const work = () => {
         $sect2.empty()
         $('<a>').addClass('prof').text('-Work History-').appendTo($sect2)
-        $('<a>').addClass('.story').text('')
-    }
+        $('<a>').addClass('story').text('General Assembly Fellow').appendTo($sect2)
+        $('<a>').addClass('exp').text('ø Shadowed team members to learn new tasks and how to appropriately handle technical issues.').appendTo($sect2)
+        $('<a>').addClass('exp').text('ø Learned new skills and applied to daily tasks to improve efficiency and productivity.').appendTo($sect2)    
+        $('<a>').addClass('exp').text('ø Wrote clear, clean code for various projects.').appendTo($sect2)
+        $('<a>').addClass('exp').text('ø Coded a website using HTML, CSS, JavaScript and jQuery languages.').appendTo($sect2)
+        $('<a>').addClass('story').text('Equinox Fitness Club - Personal Trainer').appendTo($sect2)
+        $('<a>').addClass('exp').text('ø Used critical thinking to break down problems, evaluate solutions and make decisions.').appendTo($sect2)
+        $('<a>').addClass('exp').text('ø Collaborated with clients to define solution requirements.').appendTo($sect2)
+    } 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // OPEN AND CLOSE BUTTONS FOR FOOTER MODALS \
 /////////////////////////////////////////////
@@ -107,7 +114,7 @@ $(() => {
     const closeModal2 = () => {
         $modal2.css('display', 'none')
     }
-
+$('.work').on('click', work)
 $('.comp').on('click', comp)
 $('.tech').on('click', tech)
 $myself.on('click', us)

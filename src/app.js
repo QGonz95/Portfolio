@@ -46,7 +46,7 @@ $(() => {
 // CLICK 'MYSELF'\
 //////////////////
     const $img2 = $('<img src= /png/marrry.png />').addClass('img2')
-    const $p2 = $('<p>').addClass('box2').text('4/1/2022, I know its a huge time skip but this is the most significant date in my life so far. Blessed with a partner who is the very reason why I still get to dream big, even after all I have been through in pursuit of dreaming. Its safe to say my dreams are shifting with the times, and I am excited to see what unfolds in front of me. The experience I have gained is immearusable, and I always look forward to gainung more.')
+    const $p2 = $('<p>').addClass('box2').text('4/1/2022, I know its a huge time skip but this is the most significant date in my life so far. Blessed with a partner who is the very reason why I still get to dream big, even after all I have been through in pursuit of dreaming. Its safe to say my dreams are shifting with the times, and I am excited to see what unfolds in front of me. The experience I gained is immearusable, and I look forward to gaining more.')
     const $myself = $('.my')
     const $us = $('<div>').addClass('april')
     const $noi = $('.us')
@@ -59,7 +59,31 @@ $(() => {
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
 //   ABOUT ME PAGE \
 ////////////////////
-    
+    const $sect2 = $('.section2')
+    const tech = () => {
+        $sect2.empty()
+        $('<a>').addClass('prof').text('-Technical Profile-').appendTo($sect2)
+        $('<a>').addClass('sume').text('Html').appendTo($sect2)
+        $('<a>').addClass('sume').text('CSS').appendTo($sect2)
+        $('<a>').addClass('sume').text('JavaScript').appendTo($sect2)
+        $('<a>').addClass('sume').text('jQuery').appendTo($sect2)
+    }
+
+    const comp = () => {
+        $sect2.empty()
+        $('<a>').addClass('prof').text('-Competencies-').appendTo($sect2)
+        $('<a>').addClass('com').text('Development standards').appendTo($sect2)
+        $('<a>').addClass('com').text('Source Code Review').appendTo($sect2)
+        $('<a>').addClass('com').text('Html and CSS proficiency').appendTo($sect2)
+        $('<a>').addClass('com').text('Web app development').appendTo($sect2)
+        $('<a>').addClass('com').text('Software Development').appendTo($sect2)
+    }
+
+    const work = () => {
+        $sect2.empty()
+        $('<a>').addClass('prof').text('-Work History-').appendTo($sect2)
+        $('<a>').addClass('.story').text('')
+    }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // OPEN AND CLOSE BUTTONS FOR FOOTER MODALS \
 /////////////////////////////////////////////
@@ -84,6 +108,8 @@ $(() => {
         $modal2.css('display', 'none')
     }
 
+$('.comp').on('click', comp)
+$('.tech').on('click', tech)
 $myself.on('click', us)
 $me.on('click', me)
 $openBtn.on('click', openModal)

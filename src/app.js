@@ -87,10 +87,33 @@ $(() => {
         $('<a>').addClass('exp').text('ø Learned new skills and applied to daily tasks to improve efficiency and productivity.').appendTo($sect2)    
         $('<a>').addClass('exp').text('ø Wrote clear, clean code for various projects.').appendTo($sect2)
         $('<a>').addClass('exp').text('ø Coded a website using HTML, CSS, JavaScript and jQuery languages.').appendTo($sect2)
-        $('<a>').addClass('story').text('Equinox Fitness Club - Personal Trainer').appendTo($sect2)
+        $('<a>').addClass('story2').text('Equinox Fitness Club - Personal Trainer').appendTo($sect2)
+        $('<a>').addClass('exp').text('ø Designed plans from a macrocycle to microcycle cycle scale to ensure goals are achieved by deadlines agreed upon with clients.').appendTo($sect2)
         $('<a>').addClass('exp').text('ø Used critical thinking to break down problems, evaluate solutions and make decisions.').appendTo($sect2)
         $('<a>').addClass('exp').text('ø Collaborated with clients to define solution requirements.').appendTo($sect2)
     } 
+
+    const ed = () => {
+        $sect2.empty()
+        $('<a>').addClass('prof').text('-Education-').appendTo($sect2)
+        $('<a>').addClass('school').text('Software Engineer').appendTo($sect2)
+        $('<a>').addClass('class').text('October 2022 - Current').appendTo($sect2)
+        $('<a>').addClass('class').text('General Assembly New York, NY').appendTo($sect2)
+        $('<a>').addClass('school2').text('Associate in Liberal Arts').appendTo($sect2)
+        $('<a>').addClass('class').text('Fall 2014 - Spring 2017').appendTo($sect2)
+        $('<a>').addClass('class').text('Deans List 2015 - Cumulative GPA: 3.488').appendTo($sect2)
+        $('<a>').addClass('class').text('Borough of Manhattan Community College New York, NY').appendTo($sect2)
+    }
+    
+    const skill = () => {
+        $sect2.empty()
+        $('<a>').addClass('prof').text('-Transferable Skills-').appendTo($sect2)
+        $('<a>').addClass('able').text('ø Effectively understand and communicate ideas/thoughts in an unambigous manner and adjusts communication as per the context').appendTo($sect2)
+        $('<a>').addClass('able').text('ø Ability to break up a problem into multiple functions to solve the overall problem').appendTo($sect2)
+        $('<a>').addClass('able').text('ø Staying composed and persistant while facing adversity.').appendTo($sect2)
+        $('<a>').addClass('able').text('ø Enjoying repetitive tasks and able to work without motivation').appendTo($sect2)
+
+    }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // OPEN AND CLOSE BUTTONS FOR FOOTER MODALS \
 /////////////////////////////////////////////
@@ -114,6 +137,9 @@ $(() => {
     const closeModal2 = () => {
         $modal2.css('display', 'none')
     }
+
+$('.skill').on('click', skill)
+$('.ed').on('click', ed)
 $('.work').on('click', work)
 $('.comp').on('click', comp)
 $('.tech').on('click', tech)

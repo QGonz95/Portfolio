@@ -138,7 +138,7 @@ header {
     display: block;
 }
 /* ///////////////////////////////////////////////////////// */
-/* ABOUT ME PAGE */
+/* ABOUT STYLING */
 #About {
     min-height: 100vh;
     max-height: fit-content;
@@ -200,7 +200,7 @@ header {
     margin-top: 100px;
 }
 /* ///////////////////////////////////////////////////////// */
-/* Resume */
+/* RESUME STYLING */
 #Resume {
     cursor: default;
     height: 100%;
@@ -288,6 +288,21 @@ header {
     font-size: smaller;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+/* ///////////////////////////////////////////////////////// */
+/* PROJECTS STYLING */
+#Projects {
+    background-color: #BFAC95;
+    height: 100vh;
+}
+.ego {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.phil {
+   color: white;
 }
 /* ///////////////////////////////////////////////////////// */
 /* FOOTER STYLING */

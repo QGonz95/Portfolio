@@ -46,8 +46,10 @@ header {
     cursor: default;
     list-style: none;
     position: relative;
+    color: white;
 }
 .nav_links li {
+    color: white;
     display: inline-block;
     padding: 0px 20px;
     transition: all 0.3s ease 0s;
@@ -464,7 +466,10 @@ header {
     color: black;
 }
 /* FOR SMALLER SCREENS DEPENDING ON MAX WIDTH */
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+    .nav_links {
+        display: flex;
+    }
     .header, h4 {
         display: flex;
         flex-direction: column;
@@ -487,12 +492,28 @@ header {
         margin-top: auto;
     }
 }
-@media screen and (max-width: 550px){
+@media only screen and (max-width: 550px){
     .nav_links {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+    }
+ 
+    .statement h1 {
+        padding-top: 20%;
+    }
+    .statement h1:hover {
+        cursor:default;
+        color: #BFAC95;
+        text-decoration: underline;
+        transition: all .4s ease;
+    }
+    .statement p {
+        cursor: default;
+        display: flex;
+        font-size: 18px;
+        justify-content: space-evenly;
     }
     #foot {
         display: flex;
@@ -503,9 +524,15 @@ header {
         position: fixed;
         bottom: 0;
     }
-    #About, #Resume {
-        padding-top: 10%;
+    #About {
+        /* padding-top: 60%; */
+        min-height: fit-content;
+        min-width: fit-content;
+        padding-bottom: 0%;
+    }
+    #Resume {
         min-height: fit-content;
         min-width: fit-content;
     }
+
 }

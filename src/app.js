@@ -127,6 +127,7 @@ if (mediaQueryCondition.matches) {
     $('.statement').css('padding-top', '12%')
     $('.statement').css('font-size', '75%')
     $('.ego').css('display', 'flex').css('flex-flow', 'column').css('justify-content', 'center')
+    $sect2.css('font-size', '8%')
     $i.css('display', 'flex').css('flex-flow', 'column').css('justify-content', 'center')
     $us.css('display', 'flex').css('flex-flow', 'column').css('justify-content', 'center')
     $('#Resume').css('padding-bottom', '40%')

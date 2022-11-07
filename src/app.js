@@ -135,24 +135,26 @@ $(() => {
 
 // })
 const mediaQueryCondition = window.matchMedia('(max-width: 550px)')
-const head = () => {
-    $('.nav_links').css('display', 'flex')
-    $('.statement').css('padding-top', '30%')
-    setTimeout (() => {$('.nav_links').css('display', 'none')}, 4000)
-    setTimeout (() => {$('.statement').css('padding-top', '0')}, 4000)
-    if ($('#About').on('click')){
-        $('#About').css('padding-top', '50%')
-        // remove(head())
-    } else if($('#Resume').on('click')) {
-        $('.statement').css('padding-top', '90%')
-        // remove(head())
-    } else (
-        head()
-    )
-}
+
 if (mediaQueryCondition.matches) {
+    const head = () => {
+        $('.nav_links').css('display', 'flex')
+        $('.statement').css('padding-top', '30%')
+        setTimeout (() => {$('.nav_links').css('display', 'none')}, 4000)
+        setTimeout (() => {$('.statement').css('padding-top', '0')}, 4000)
+        if ($('#About').on('click')){
+            $('#About').css('padding-top', '50%')
+            // remove(head())
+        } else if($('#Resume').on('click')) {
+            $('.statement').css('padding-top', '90%')
+            // remove(head())
+        } else (
+            head()
+        )
+    }
     $('#head').on('click', head)
 }
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // OPEN AND CLOSE BUTTONS FOR FOOTER MODALS \

@@ -49,20 +49,21 @@ $(() => {
     const $p2 = $('<p>').addClass('box2').text('4/1/2022, I know its a huge time skip but this is the most significant date in my life so far. Blessed with a partner who is the very reason why I still get to dream big, even after all I have been through in pursuit of dreaming. Its safe to say my dreams are shifting with the times, and I am excited to see what unfolds in front of me. The experience I gained is immearusable, and I look forward to gaining more.')
     const $myself = $('.my')
     const $us = $('<div>').addClass('april')
-    const $noi = $('.us')
+   
     const us = () => {
         $us.append($p2)
         $us.append($img2)
         $('#About').append($us)
         $('.us').text($('.us').text().replace(/and I/g, 'and Us'))
     }
+    
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
 //   ABOUT ME PAGE \
 ////////////////////
     const $sect2 = $('.section2')
     const tech = () => {
         $sect2.empty()
-        $('<a>').addClass('prof').text('-Technical Profile-').appendTo($sect2)
+        $('<a>').addClass('prof').text('Technical Profile').appendTo($sect2)
         $('<a>').addClass('sume').text('Html').appendTo($sect2)
         $('<a>').addClass('sume').text('CSS').appendTo($sect2)
         $('<a>').addClass('sume').text('JavaScript').appendTo($sect2)
@@ -71,7 +72,7 @@ $(() => {
 
     const comp = () => {
         $sect2.empty()
-        $('<a>').addClass('prof').text('-Competencies-').appendTo($sect2)
+        $('<a>').addClass('prof').text('Competencies').appendTo($sect2)
         $('<a>').addClass('com').text('Development standards').appendTo($sect2)
         $('<a>').addClass('com').text('Source Code Review').appendTo($sect2)
         $('<a>').addClass('com').text('Html and CSS proficiency').appendTo($sect2)
@@ -81,7 +82,7 @@ $(() => {
 
     const work = () => {
         $sect2.empty()
-        $('<a>').addClass('prof').text('-Work History-').appendTo($sect2)
+        $('<a>').addClass('prof').text('Work History').appendTo($sect2)
         $('<a>').addClass('story').text('General Assembly Fellow').appendTo($sect2)
         $('<a>').addClass('exp').text('ø Shadowed team members to learn new tasks and how to appropriately handle technical issues.').appendTo($sect2)
         $('<a>').addClass('exp').text('ø Learned new skills and applied to daily tasks to improve efficiency and productivity.').appendTo($sect2)    
@@ -95,7 +96,7 @@ $(() => {
 
     const ed = () => {
         $sect2.empty()
-        $('<a>').addClass('prof').text('-Education-').appendTo($sect2)
+        $('<a>').addClass('prof').text('Education').appendTo($sect2)
         $('<a>').addClass('school').text('Software Engineer').appendTo($sect2)
         $('<a>').addClass('class').text('October 2022 - Current').appendTo($sect2)
         $('<a>').addClass('class').text('General Assembly New York, NY').appendTo($sect2)
@@ -107,7 +108,7 @@ $(() => {
     
     const skill = () => {
         $sect2.empty()
-        $('<a>').addClass('prof').text('-Transferable Skills-').appendTo($sect2)
+        $('<a>').addClass('prof').text('Transferable Skills').appendTo($sect2)
         $('<a>').addClass('able').text('ø Effectively understand and communicate ideas/thoughts in an unambigous manner and adjusts communication as per the context').appendTo($sect2)
         $('<a>').addClass('able').text('ø Ability to break up a problem into multiple functions to solve the overall problem').appendTo($sect2)
         $('<a>').addClass('able').text('ø Staying composed and persistant while facing adversity.').appendTo($sect2)
@@ -115,44 +116,35 @@ $(() => {
 
     }
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// MEDIA SCREEN AT MAX-WIDTH 550 \
-//////////////////////////////////
+// MEDIA SCREEN AT MAX-WIDTH 550 TOOOK WAY TOO LONG \
+/////////////////////////////////////////////////////
    
-// const head = (x) => {
-//       let x = window.matchMedia("(max-width: 550px)")
-//        while (x.matches){ 
-//         $('.nav_links').css('display', 'flex')
-//         $('.statement').css('padding-top', '30%')
-//         setTimeout (() => {$('.nav_links').css('display', 'none')}, 4000)
-//         setTimeout (() => {$('.statement').css('padding-top', '0')}, 4000)
-    
-//         }
-//     }
-// //     }
-
-
-// window.addEventListener('load', ()=>{
-
-// })
-const mediaQueryCondition = window.matchMedia('(max-width: 550px)')
+const mediaQueryCondition = window.matchMedia('(max-width: 812px)')
 
 if (mediaQueryCondition.matches) {
+    $('.nav_links').css('display', 'none')
+    $('.statement').css('padding-top', '12%')
+    $('.statement').css('font-size', '75%')
     const head = () => {
-        $('.nav_links').css('display', 'flex')
-        $('.statement').css('padding-top', '30%')
+        $('.nav_links').css('display', 'flex').css('flex-flow', 'column')
+        $('.statement').css('padding-top', '35%')
         setTimeout (() => {$('.nav_links').css('display', 'none')}, 4000)
-        setTimeout (() => {$('.statement').css('padding-top', '0')}, 4000)
+        setTimeout (() => {$('.statement').css('padding-top', '12%')}, 4000)
         if ($('#About').on('click')){
-            $('#About').css('padding-top', '50%')
-            // remove(head())
-        } else if($('#Resume').on('click')) {
-            $('.statement').css('padding-top', '90%')
-            // remove(head())
+            $('#About').css('padding-top', '20%')
+        }if($('#Resume').on('click')) {
+            $('.res').css('padding-top', '60%')
+            setTimeout (() => {$('.res').css('padding-top', '25%')}, 4000)
+        }if($('#Projects').on('click')){
+            $('.ran').css('padding-top', '60%')
+            setTimeout (() => {$('.ran').css('padding-top', '30%')}, 4000)
         } else (
             head()
         )
     }
+
     $('#head').on('click', head)
+    
 }
 
 

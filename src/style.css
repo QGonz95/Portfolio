@@ -480,7 +480,6 @@ header {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3){
-  
     .statement h1 {
         padding-top: 10%;
     }
@@ -500,11 +499,21 @@ header {
     }
     #About {
         min-height: 100vh;
-       max-height: 100%;
+       max-height: fit-content;
+    }
+    .myself {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #BFAC95;
+        padding-bottom: 2%;
+        /* width: fit-content; */
     }
     #Resume {
         min-height: 100vh;
         min-width: fit-content;
+        padding-bottom: 30px;
     }
     #Resume h1 {
         text-align: center;
@@ -544,7 +553,8 @@ header {
     .ego {
         display: flex;
         flex-direction: column;
-
+        
+        font-size: 10px;
     }
 
     #modal {

@@ -122,22 +122,28 @@ $(() => {
 const mediaQueryCondition = window.matchMedia('(max-width: 812px)')
 
 if (mediaQueryCondition.matches) {
+    $('.header').css('display', 'flex').css('flex-flow', 'column').css('justify-content', 'center')
     $('.nav_links').css('display', 'none')
     $('.statement').css('padding-top', '12%')
     $('.statement').css('font-size', '75%')
+    $('.ego').css('display', 'flex').css('flex-flow', 'column').css('justify-content', 'center')
+    $i.css('display', 'flex').css('flex-flow', 'column').css('justify-content', 'center')
+    $us.css('display', 'flex').css('flex-flow', 'column').css('justify-content', 'center')
+    $('#Resume').css('padding-bottom', '40%')
     const head = () => {
         $('.nav_links').css('display', 'flex').css('flex-flow', 'column')
         $('.statement').css('padding-top', '35%')
         setTimeout (() => {$('.nav_links').css('display', 'none')}, 4000)
         setTimeout (() => {$('.statement').css('padding-top', '12%')}, 4000)
         if ($('#About').on('click')){
-            $('#About').css('padding-top', '20%')
+            $('#About').css('padding-top', '50%')
         }if($('#Resume').on('click')) {
+            // $('#Resume').css('padding-bottom', '10%')
             $('.res').css('padding-top', '60%')
             setTimeout (() => {$('.res').css('padding-top', '25%')}, 4000)
         }if($('#Projects').on('click')){
             $('.ran').css('padding-top', '60%')
-            setTimeout (() => {$('.ran').css('padding-top', '30%')}, 4000)
+            // setTimeout (() => {$('.ran').css('padding-top', '60%')}, 4000)
         } else (
             head()
         )

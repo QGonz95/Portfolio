@@ -1,4 +1,5 @@
 # Portfolio
+https://qgonz.netlify.app/#Resume
 BASIC PORTFOLIO OUTLINE
 With 1 picture carousl and 2 modals and 2 functional forms.
 Smooth scroll behavior
